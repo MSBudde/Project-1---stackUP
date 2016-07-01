@@ -10,4 +10,4 @@
 
 
 ## What is used in the development of stackUP?
-##### The main items being used in the development of stackUP will be HTML, CSS, vanilla Javascipt as well as jQuery.
+##### The main items being used in the development of stackUP will be HTML, CSS, vanilla Javascipt as well as jQuery. possibly the p5.js library.
