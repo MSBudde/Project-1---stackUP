@@ -1,0 +1,17 @@
+h1 {
+  align-items: center;
+}
+
+#up {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  /*border: 1px solid black;*/
+  margin: auto;
+  -webkit-transform: rotate(-18deg);
+  align-content: center;
+}
+
+#stack {
+  float: left;
+}
