@@ -11,3 +11,9 @@
 
 ## What is used in the development of stackUP?
 ##### The main items being used in the development of stackUP will be HTML, CSS, vanilla Javascipt as well as jQuery. possibly the p5.js library.
+
+
+## MVP 
+#### blocks to move within board 
+#### blocks successfully stacking on top of each other, if block does not stop on previous block, you lose.
+#### win logic is if you get to the top of the board, you win.
