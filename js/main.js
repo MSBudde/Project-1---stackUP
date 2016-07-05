@@ -1,8 +1,26 @@
-console.log('connected')
+// $(function() {
+//  var canvas1 = $('<canvas/>', { id: 'mycanvas', height: 700, width: 500});
+//  canvas1.css('border', 'solid 1px red');
+//  $('body').append(canvas1);
+//  });
 
-setInterval(function(){
-  $('#block1').stop(true,true).animate({left:300},1000,
-    function (){
-      $(this).stop(true,true).animate({left:0},1000)
-    })
-},2000);
+function generateTable()
+{
+	html = '<table id="game">\n';
+
+	for (var i = 7; i >= 1; i--)
+	{
+		html += '\t<tr>\n';
+
+		for (var j = 1; j <= 5; j++)
+		{
+			html += '\t\t<td id="S' + i + '' + j + '"></td>\n';
+		}
+
+		html += '\t</tr>\n';
+	}
+
+	html += '</table>';
+
+	document.write(html);
+}
