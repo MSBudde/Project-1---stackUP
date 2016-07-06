@@ -1,26 +1,27 @@
-body {
-  /*background-color: black;*/
+
+
+.animate {
+
+  background-color: #ff0090;
 }
 
-#gameBoard {
-    align-content: center;
-    border: 1px solid black;
-    height: 550px;
-    width: 400px;
-    margin-left: 400px;
-    background-color: #aa0000;
-    opacity: 1;
+h1 {
+  text-align: center;
+}*/
+
+
+body
+{
+	font-family: calibri, sans-serif;
+	text-align: center;
 }
 
-tr td {
-  border: 1px solid black;
-  height:75px;
-  width: 75px;
-}
-#game{
+#game
+{
 	margin-left: auto;
 	margin-right: auto;
-  border-collapse: collapse;
+
+	border-collapse: collapse;
 	border-spacing: 0px;
 	border: 1px solid black;
 
@@ -30,20 +31,6 @@ tr td {
 #game tr td
 {
 	border: 1px solid black;
-	background-color: transparent;
-}
-
-
-
-
-
-.animate_me {
-  width: 75px;
   height: 75px;
-  background-color: #ff0090;
-  animation-duration: 5s;
-}
-
-h1 {
-  text-align: center;
+  width: 75px;
 }
