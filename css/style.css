@@ -1,9 +1,11 @@
+/*@@media (max-width: 600px) {
 
+}*/
 
 .animate {
-
-  background-color: dodgerBlue;
-	animation-duration: 2s;
+    background-image:url(http://orig14.deviantart.net/c74b/f/2011/193/d/2/ml_thwomp_anim_by_neslug-d3nogzk.gif);
+    background-size: cover;
+    animation-duration: 2s;
 }
 
 h1 {
@@ -13,7 +15,8 @@ h1 {
 
 body
 {
-	font-family: calibri, sans-serif;
+  background-image: url(http://i.imgur.com/lYfCn.png);
+  font-family: calibri, sans-serif;
 	text-align: center;
 }
 
@@ -21,8 +24,7 @@ body
 {
 	margin-left: auto;
 	margin-right: auto;
-
-	border-collapse: collapse;
+  /*background-image: url(http://i.imgur.com/lYfCn.png);*/
 	border-spacing: 0px;
 	border: 1px solid black;
 

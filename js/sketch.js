@@ -12,40 +12,20 @@ var rowNumb = $rows.eq(6);
 var index = $rows.length - 1
 var $currentRow = $rows.eq(index);
 var blocksStopped = [];
-var wins = [];
-var blockArray = [];
-
-	// function check (){
-	// $('.animate').each( function(i,e) {
-	// 	 /* you can use e.id instead of $(e).attr('id') */
-	// 	 blockArray.push($(e).attr('id'));
-	// });
-	// }
+var blockArray = [1,2,3,4,5,6];
+var space = 0;
 
 
-
-// setInterval(function(){
-// 	if(running){
-//
-//
-// 	$tRow[prev].classList.remove('animate');
-//
-// 	$tRow[current].classList.add('animate');
-// 		prev = current;
-// 		current++;
-// 		if (current >= $tRow.length){
-//
-// 			current = 0;
-//
-// 		}
-// 	}
-// },200)
 document.body.addEventListener("keydown", function(e){
 	if(e.key === " "){
 		running = !running;
-		speed -= 35;
-
+		space++;
+		// speed -= 35;
+		blockCheck();
+		console.log($('.animate'))
 		clearInterval(interval)
+		letsGo();
+		checkWin();
 	}
 })
 document.body.addEventListener('keyup', function(e){
@@ -53,9 +33,8 @@ document.body.addEventListener('keyup', function(e){
 			index--;
 			$currentRow = $rows.eq(index);
 			running = !running;
-
-
-			animateRow($currentRow.children())
+				// checkWin();
+				animateRow($currentRow.children())
 		}
 })
 function animateRow(cells){
@@ -71,7 +50,9 @@ function animateRow(cells){
 					current = 0;
 
 				}
-			} else {
+			} else if (true) {
+
+			} {
 
 			}
 		},speed)
@@ -81,10 +62,23 @@ function animateRow(cells){
 animateRow($currentRow.children());
 
 //
-// function blockCheck(){
-// 	if($tds.hasClass("animate")){
-//  			 blocksStopped.push()
-// 	}
-// }
-//
-// ()
+function blockCheck(){
+	$('.animate');
+
+
+};
+
+function checkWin(){
+	if($('.animate')[0].classList[0] == $('.animate')[1].classList[0] && space == 13)
+	alert('win')
+}
+
+function letsGo(){
+	if($('.animate')[0].classList[0] == $('.animate')[1].classList[0]){
+		space++;
+
+
+} else {
+	alert('lose');
+}
+}
