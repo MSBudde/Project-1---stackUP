@@ -80,8 +80,6 @@ function animateRow(cells){
 
 animateRow($currentRow.children());
 
-if($('#s11'),$)
-
 //
 // function blockCheck(){
 // 	if($tds.hasClass("animate")){
