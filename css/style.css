@@ -2,7 +2,7 @@
 
 .animate {
 
-  background-color: #ff0090;
+  background-color: dodgerBlue;
 	animation-duration: 2s;
 }
 
@@ -34,4 +34,5 @@ body
 	border: 1px solid black;
   height: 75px;
   width: 75px;
+
 }
