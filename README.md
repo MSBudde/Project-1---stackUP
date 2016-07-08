@@ -15,7 +15,7 @@ Timing element times after your first stack.
 
 
 ## What is used in the development of Thwomp on Thwomp?
-The main items being used in the development of stackUP will be HTML, CSS, vanilla Javascipt as well as jQuery.
+The main items being used in the development of Thwomp on Thwomp will be HTML, CSS, vanilla Javascipt as well as jQuery.
 
 ## Stretch Goals
 Add SVG winning and losing animation.
@@ -23,4 +23,4 @@ Add more rows.
 Add Best Record timing tracker.
 
 ## Wireframes
-[Imgur](http://i.imgur.com/jPNwKEB.png)
+![Imgur](http://i.imgur.com/jPNwKEB.png)
