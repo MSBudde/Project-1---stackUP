@@ -1,19 +1,26 @@
-# Project-1---stackUP
+# Project-1---Thwomp on THWOMP!
+
+## Objectives
+Stop first Thwomp.
+Stack next Thwomp on previous one.
+Succesfully do that until you get to the last row.
+Stack all 7 Thwomps on top of each other to win!
+
+## MVP
+Must stop Thwomp with spacebar.
+Must stop game if not succesful in stacking Thwomp on previous Thwomp.
+After each succesful stack animation speed increases.
+Blocks animate through grid.
+Timing element times after your first stack.
 
 
-## What is stackUP?
-### stackUP is a very simple game that can be very addicting.
-##### The object of the game is to stack blocks up to a certain point. 
-##### The user starts with one block and stops it within a certain part of the game board. When that happens the object is tostack the rest of the boxes that will appear once the user has succesfully stacked a block on another block.
-##### As the game progresses the blocks will move faster up until the final slot where it will be moving at its quickest speed. If the user gets that far that is. If the user fails to stack on top of the previous block, they lose.
-##### The only way to truly win is to successfully stack all blocks to the top of the board.
+## What is used in the development of Thwomp on Thwomp?
+The main items being used in the development of stackUP will be HTML, CSS, vanilla Javascipt as well as jQuery.
 
+## Stretch Goals
+Add SVG winning and losing animation.
+Add more rows.
+Add Best Record timing tracker.
 
-## What is used in the development of stackUP?
-##### The main items being used in the development of stackUP will be HTML, CSS, vanilla Javascipt as well as jQuery. possibly the p5.js library.
-
-
-## MVP 
-#### blocks to move within board 
-#### blocks successfully stacking on top of each other, if block does not stop on previous block, you lose.
-#### win logic is if you get to the top of the board, you win.
+## Wireframes
+![wireframe] (p1BlocksonBlocks/assets/stackUP-wireframe.png)

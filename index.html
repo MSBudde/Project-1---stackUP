@@ -5,13 +5,13 @@
   <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8">
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<!-- <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script> -->
+<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.20/jquery-ui.min.js"></script>
   <script language="javascript" type="text/javascript" src="p5-zip/p5.js"></script>
 
 
   <style> body {padding: 0; margin: 0;} </style>
-  <h1 id="bl1">Thwomp on<br>THWOMP</h1>
+  <h1 id="bl1">Thwomp<br>on<br>THWOMP</h1>
 
 </head>
 <body>
@@ -70,15 +70,16 @@
   <h3> How to play!</h3>
   <div><h5>It's simple, stack Thwomp consecutively until you get to the final row!
     Yet, be aware! The speed kicks up when you succesfully stack on the previous Thwomp!
+    Just press your spacebar to stop thwomp!
+    You're being timed! so lets see how fast you can finish!<br>Wanna try again? Just click below!
+    <br>  <INPUT TYPE="button" onClick="history.go(0)" VALUE="Again?">
+
   </h5></div>
-  <div id="times"></div>
+  <div id="times">Took you</div>
   <audio controls>
   <audio controls id="bowser" preload="none" autoplay  src="assets/bowsertheme.mp3"></audio>
   Your browser does not support the audio tag.
 </audio>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js -->
-<!-- " charset="utf-8"></script> -->
-  <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
   <script src="js/main.js" charset="utf-8"></script>
 </body>
 <footer>
