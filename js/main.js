@@ -17,7 +17,7 @@ document.body.addEventListener("keydown", function(e){
 	if(e.key === " "){
 		running = !running;
 		space++;
-		speed -= 29.5;
+		speed -= 31;
 		blockCheck();
 		console.log($('.animate'))
 		clearInterval(interval)
