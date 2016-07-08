@@ -23,4 +23,4 @@ Add more rows.
 Add Best Record timing tracker.
 
 ## Wireframes
-![wireframe] (p1BlocksonBlocks/assets/stackUP-wireframe.png)
+[Imgur](http://i.imgur.com/jPNwKEB.png)
