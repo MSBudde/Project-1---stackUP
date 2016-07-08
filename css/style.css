@@ -1,6 +1,7 @@
 /*@@media (max-width: 600px) {
 
 }*/
+/*@font-face { font-family: 'mario', sans-serif; src: url('SuperMario256.ttf') format('ttf') }*/
 
 .animate {
     background-image:url(http://orig14.deviantart.net/c74b/f/2011/193/d/2/ml_thwomp_anim_by_neslug-d3nogzk.gif);
@@ -8,16 +9,45 @@
     animation-duration: 2s;
 }
 
-h1 {
+#bl1 {
+  font-family: 'Press Start 2P', cursive;
+  /*taken from markdotto.com for 3D text styling*/
+  text-shadow: 0 1px 0 #ccc,
+             0 2px 0 #c9c9c9,
+             0 3px 0 #bbb,
+             0 4px 0 #b9b9b9,
+             0 5px 0 #aaa,
+             0 6px 1px rgba(0,0,0,.1),
+             0 0 5px rgba(0,0,0,.1),
+             0 1px 3px rgba(0,0,0,.3),
+             0 3px 5px rgba(0,0,0,.2),
+             0 5px 10px rgba(0,0,0,.25),
+             0 10px 10px rgba(0,0,0,.2),
+             0 20px 20px rgba(0,0,0,.15);
   text-align: center;
-}*/
+  color: white;
+  font-size: 4em;
+  position: relative;
+  z-index: 2;
+  margin-top: -1px;
+}
 
+h3{
+  color: white;
+  margin-top: -200px;
+  float: left;
+}
+h5 {
+  color: white;
+  margin-top: -100px;
+  width: 200px;
+}
 
 body
 {
-  background-image: url(http://i.imgur.com/lYfCn.png);
-  font-family: calibri, sans-serif;
-	text-align: center;
+  background-image: url(http://67.media.tumblr.com/f2e1dcd5ba2d9923568e52dbd2bf2fbd/tumblr_n0tmm6wHQT1rrftcdo1_540.png);
+  background-size: contain;
+  text-align: center;
 }
 
 #game
@@ -26,15 +56,21 @@ body
 	margin-right: auto;
   /*background-image: url(http://i.imgur.com/lYfCn.png);*/
 	border-spacing: 0px;
-	border: 1px solid black;
+	border: 1px solid lightGrey;
 
 	empty-cells: show;
 }
 
 #game tr td
 {
-	border: 1px solid black;
+	border: 1px solid lightGrey;
   height: 75px;
   width: 75px;
 
 }
+
+div {
+  padding: auto;
+}
+
+html, body

@@ -11,21 +11,20 @@ var rowNumb = $rows.eq(6);
 // var direction = 1;
 var index = $rows.length - 1
 var $currentRow = $rows.eq(index);
-var blocksStopped = [];
-var blockArray = [1,2,3,4,5,6];
+
 var space = 0;
-
-
+// var thissound = document.getElementById('thwomp')
 document.body.addEventListener("keydown", function(e){
 	if(e.key === " "){
 		running = !running;
 		space++;
-		// speed -= 35;
+		speed -= 35;
 		blockCheck();
 		console.log($('.animate'))
 		clearInterval(interval)
 		letsGo();
 		checkWin();
+
 	}
 })
 document.body.addEventListener('keyup', function(e){
@@ -33,10 +32,12 @@ document.body.addEventListener('keyup', function(e){
 			index--;
 			$currentRow = $rows.eq(index);
 			running = !running;
-				// checkWin();
-				animateRow($currentRow.children())
+			 $thwomp = $('<audio autoplay> <source src="assets/Thwomp.mp3" type="audio/mpeg"></audio>')
+
+						animateRow($currentRow.children())
 		}
 })
+var t0 = performance.now();
 function animateRow(cells){
 	// for(var i = 0;i < cells.length;i++){
 	 interval =	setInterval(function(){
@@ -70,7 +71,13 @@ function blockCheck(){
 
 function checkWin(){
 	if($('.animate')[0].classList[0] == $('.animate')[1].classList[0] && space == 13)
+	var mute = document.getElementById('bowser');
+	mute.muted = true;
+	$winner = $('<audio autoplay> <source src="assets/win.mp3"  type="audio/mpeg"></audio>')
 	alert('win')
+
+	var t1 = performance.now();
+	$('#times').html((t1-t0) / 1000 + ' seconds')
 }
 
 function letsGo(){
@@ -79,6 +86,20 @@ function letsGo(){
 
 
 } else {
+	var mute = document.getElementById('bowser');
+	mute.muted = true;
+	$loser = $('<audio autoplay> <source src="assets/lose.mp3"  type="audio/mpeg"></audio>')
 	alert('lose');
+var t1 = performance.now();
+$('#times').html((t1-t0) / 1000 + ' seconds')
 }
 }
+
+function reset(){
+		$('.animate')
+}
+
+// function EvalSound(soundobj) {
+//   var thissound =document.getElementById('thwomp');
+//
+// }
