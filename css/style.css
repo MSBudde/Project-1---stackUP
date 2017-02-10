@@ -41,23 +41,23 @@ h5 {
 
 body
 {
-  background-image: url(http://67.media.tumblr.com/f2e1dcd5ba2d9923568e52dbd2bf2fbd/tumblr_n0tmm6wHQT1rrftcdo1_540.png);
+  background-image: url('../assets/bowser.png');
   background-size: contain;
   text-align: center;
 }
 
 #game
 {
-	margin-left: auto;
-	margin-right: auto;
-	border-spacing: 0px;
-	border: 1px solid lightGrey;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0px;
+  border: 1px solid lightGrey;
   empty-cells: show;
 }
 
 #game tr td
 {
-	border: 1px solid lightGrey;
+  border: 1px solid lightGrey;
   height: 75px;
   width: 75px;
 
